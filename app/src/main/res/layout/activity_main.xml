@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.manaosoftware.utilskeyboard.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:id="@+id/btn_show"
+        android:layout_marginTop="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tv_title"
+        android:layout_toStartOf="@+id/tv_title" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hide"
+        android:id="@+id/btn_hide"
+        android:layout_alignTop="@+id/btn_show"
+        android:layout_toRightOf="@+id/tv_title"
+        android:layout_toEndOf="@+id/tv_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Keyboard"
+        android:layout_above="@+id/btn_hide"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:id="@+id/tv_title" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/btn_show"
+        android:layout_alignLeft="@+id/btn_show"
+        android:layout_alignStart="@+id/btn_show"
+        android:layout_alignRight="@+id/btn_hide"
+        android:layout_alignEnd="@+id/btn_hide" />
+
+</RelativeLayout>
